@@ -1,0 +1,33 @@
+body {
+	background-color:rgb(81, 191, 224);
+    /* background-repeat: no-repeat; */
+}
+@media only screen and (min-width: 1200px) {
+    .g2{
+        margin-left: 80%;
+    }
+}
+.logo{
+    animation: logo 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes logo{
+  0%,40%,100%, {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+.g2{
+    animation: g2 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes g2{
+  0%,40%,100%, {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
